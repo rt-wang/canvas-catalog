@@ -1,5 +1,7 @@
 # canvas-catalog
 
+**English** · [简体中文](README.zh-CN.md)
+
 A portfolio that behaves like a crate of records instead of a grid of cards.
 
 Every piece of work is a **sleeve** on an infinite, draggable plane — art on the
