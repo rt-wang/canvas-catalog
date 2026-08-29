@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>On Making Things — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#EFEEEA;
+  --ink:#131519;
+  --ink-soft:#6E6F6A;
+  --rule:#C6C5BF;
+  --accent:#2320E8;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  --cjk:"Newsreader","Songti SC","Noto Serif SC",serif;
+  --mono:"Space Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --gutter:clamp(18px,4vw,56px);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--page);color:var(--ink);
+  font-family:var(--body);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.topbar{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  padding:18px var(--gutter);border-bottom:1px solid var(--rule);
+}
+.topbar__name{
+  font-family:var(--display);font-variation-settings:"wdth" 118,"wght" 800;
+  font-size:14px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;
+}
+.topbar a.back{text-decoration:none;color:var(--ink-soft)}
+.topbar a.back:hover{color:var(--accent)}
+.wrap{padding:0 var(--gutter)}
+header.piece{
+  padding:clamp(44px,8vw,96px) 0 clamp(26px,4vw,44px);
+  border-bottom:1px solid var(--rule);margin-bottom:clamp(28px,4vw,52px);
+}
+.eyebrow{color:var(--ink-soft);margin-bottom:clamp(16px,2.4vw,26px)}
+h1{
+  margin:0;font-family:var(--display);
+  font-variation-settings:"wdth" 112,"wght" 840;
+  font-size:clamp(32px,6.4vw,78px);line-height:.92;
+  letter-spacing:-.02em;text-transform:uppercase;max-width:16ch;
+}
+.byline{margin-top:clamp(16px,2.2vw,24px);color:var(--ink-soft)}
+article{
+  max-width:34em;
+  font-size:clamp(17px,1.45vw,19.5px);
+  line-height:1.62;
+  padding-bottom:clamp(48px,7vw,96px);
+}
+article p{margin:0 0 1.15em}
+.sec{
+  margin:2.4em 0 1.6em;color:var(--ink-soft);
+  border-top:1px solid var(--rule);padding-top:1.1em;
+  font-size:13px;letter-spacing:.05em;
+}
+article .sec:first-child{border-top:0;padding-top:0;margin:0 0 1.6em}
+footer{
+  border-top:1px solid var(--rule);padding:18px var(--gutter) 40px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--ink-soft);
+}
+footer a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="topbar__name" href="../index.html">Your Name</a>
+  <a class="back mono" href="../index.html">← Catalog</a>
+</header>
+
+<div class="wrap">
+  <header class="piece">
+    <div class="eyebrow mono">Essay · 2026</div>
+    <h1>On Making Things</h1>
+    <div class="byline mono">March 1, 2026 · 152 words</div>
+  </header>
+
+  <article>
+    <p>This file is plain text. The build script turns it into a reading page that<br>matches the rest of the site, so you never write HTML for an essay.</p>
+    <p>Paragraphs are separated by a blank line, exactly as they are here. There is no<br>markup to learn and nothing to escape. Write the way you would in any notes app,<br>save the file, and run the build.</p>
+    <p>A line containing only a number — 一, 二, 三, or 1, 2, 3 — becomes a section<br>break rather than a paragraph. Useful for prose that moves in movements.</p>
+    <p>To add a piece: drop a .txt file in this folder, add an entry to articles.json<br>at the repo root, run `npm run build`, and point a writing entry in content.js<br>at the page it produces. Three steps, and the page inherits the site's<br>typography, dark-panel palette and back-link automatically.</p>
+    <p>Delete this file once you have your own.</p>
+  </article>
+</div>
+
+<footer class="mono">
+  <span>© 2026 Your Name</span>
+  <a href="../index.html">Back to the catalog</a>
+</footer>
+
+</body>
+</html>

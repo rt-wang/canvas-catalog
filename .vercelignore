@@ -1,0 +1,9 @@
+# Only site/ ships. Leading slashes matter: an unanchored "index.html" would
+# also match site/index.html and drop the homepage.
+/README.md
+/AGENTS.md
+/LICENSE
+/build-articles.js
+/dev-server.js
+/articles.json
+/site/articles/src

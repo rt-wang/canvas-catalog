@@ -1,0 +1,8 @@
+A Shorter Note
+
+Not everything needs to be an essay. Short pieces give a catalog its texture —
+they sit between the long-form work and stop the whole thing reading like a
+seminar.
+
+The build treats a ninety-word note and a four-thousand-word essay identically.
+Only the word count in the caption differs, and that is measured for you.

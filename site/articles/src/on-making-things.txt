@@ -1,0 +1,18 @@
+On Making Things
+
+This file is plain text. The build script turns it into a reading page that
+matches the rest of the site, so you never write HTML for an essay.
+
+Paragraphs are separated by a blank line, exactly as they are here. There is no
+markup to learn and nothing to escape. Write the way you would in any notes app,
+save the file, and run the build.
+
+A line containing only a number — 一, 二, 三, or 1, 2, 3 — becomes a section
+break rather than a paragraph. Useful for prose that moves in movements.
+
+To add a piece: drop a .txt file in this folder, add an entry to articles.json
+at the repo root, run `npm run build`, and point a writing entry in content.js
+at the page it produces. Three steps, and the page inherits the site's
+typography, dark-panel palette and back-link automatically.
+
+Delete this file once you have your own.

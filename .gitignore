@@ -1,0 +1,10 @@
+node_modules/
+.vercel/
+.DS_Store
+
+# Drop your own licensed font files in site/fonts/ — they are yours, not the
+# template's, so they stay out of version control by default.
+site/fonts/*.woff2
+site/fonts/*.woff
+site/fonts/*.ttf
+site/fonts/*.otf

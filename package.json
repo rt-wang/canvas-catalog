@@ -1,0 +1,11 @@
+{
+  "name": "canvas-catalog",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A draggable canvas portfolio template — every work is a record sleeve on an infinite plane.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node dev-server.js 8000",
+    "build": "node build-articles.js"
+  }
+}
